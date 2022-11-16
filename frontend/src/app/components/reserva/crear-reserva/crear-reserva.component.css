@@ -1,0 +1,74 @@
+.hijo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row {
+  height: 150px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.row div {
+  height: 50%;
+}
+
+.column-2 {
+  width: 48%;
+}
+
+.column-3 {
+  width: 14%;
+}
+
+.left {
+  float: left;
+}
+
+.center {
+  float: left;
+  margin: 0 5%;
+}
+
+.right {
+  float: right;
+}
+
+.col2 {
+  border: 2px solid green;
+  width: 49%;
+  float: left;
+  height: 100%;
+  margin-right: 2%;
+}
+
+.col2:last-child {
+  margin-right: 0;
+}
+
+.col3 {
+  border: 2px solid brown;
+  width: 32%;
+  float: left;
+  height: 100%;
+  margin-right: 2%;
+}
+
+.col3:last-child {
+  margin-right: 0;
+}
+
+.single {
+  display: flex;
+  justify-content: center;
+}
+
+#my_col_edits {
+  width: 50%;
+  height: 100px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}

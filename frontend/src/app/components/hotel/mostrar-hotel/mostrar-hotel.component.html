@@ -1,0 +1,38 @@
+<div class="flex align-items-center justify-content-end bg-cyan-100">
+    <a pButton pRipple label="Crear Hoteles" icon="pi pi-user-plus" class="bg-cyan-600" [routerLink]="['/addhotels']">
+    </a>
+</div>
+<div>
+    <p-toast></p-toast>
+</div>
+<p-table [value]="hotels[0]">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Direccion</th>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th>Tipo categoria</th>
+            <th>Tipo habitacion</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-hotels>
+        <tr>
+            <td>{{hotels.id}}</td>
+            <!-- <td>{{hotels.año}}</td> -->
+            <td>{{hotels.direccionHoteles}}</td>
+            <td>{{hotels.nombreHoteles}}</td>
+            <td>{{hotels.telefonoHoteles}}</td>
+            <td>{{hotels.tipocategoria}}</td>
+            <td>{{hotels.tipohabitacion}}</td>
+            <td>
+                <a pButton pRipple icon="pi pi-sync" class="bg-cyan-600  mr-1"
+                    [routerLink]="['/hotels/edit', hotels.id]">
+                </a>
+                <button type="button" pButton pRipple icon="pi pi-eraser" class="bg-cyan-600  mr-1"
+                    (click)="eliminar(hotels.id)">
+                </button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

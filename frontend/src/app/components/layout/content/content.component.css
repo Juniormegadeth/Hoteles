@@ -1,0 +1,46 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr  1fr;
+    grid-template-areas:
+    "header header  header  header  header"
+    "section  section section section section"
+    "footer footer  footer  footer  footer";
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-rows: 14% 76% 10%;
+    height: 98vh;
+}
+
+header {
+    grid-area: header;
+    /* border: 1px solid royalblue; */
+    background-color: #8DC3D8;
+    margin-top: 0.1em;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+}
+
+section {
+    grid-area: section;
+    margin-top: 1em;
+    margin-left: 0.2em;
+    margin-right: 1em;
+    /* border: 1px solid royalblue; */
+}
+
+.hijo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(116, 99, 189);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+footer {
+    grid-area: footer;
+    border: 1px solid royalblue;
+}
